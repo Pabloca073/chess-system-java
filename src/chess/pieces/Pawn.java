@@ -42,7 +42,7 @@ public class Pawn extends ChessPiece{
 				mat[p.getRows()][p.getColumns()] = true;
 			}
 			p.setValues(position.getRows() + 2, position.getColumns());
-			Position p2 = new Position(position.getRows() - 1, position.getColumns());
+			Position p2 = new Position(position.getRows() + 1, position.getColumns());
 			if (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p) && getBoard().positionExists(p2) && !getBoard().thereIsAPiece(p2) && getMoveCount() == 0) {
 				mat[p.getRows()][p.getColumns()] = true;
 			}
